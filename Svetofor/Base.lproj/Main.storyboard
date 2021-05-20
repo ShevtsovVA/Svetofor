@@ -32,8 +32,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImK-Rf-TsE">
-                                <rect key="frame" x="157" y="712" width="100" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImK-Rf-TsE">
+                                <rect key="frame" x="184" y="712" width="46" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
@@ -43,6 +44,13 @@
                             <constraint firstItem="ImK-Rf-TsE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="x0D-FQ-9Zt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Button" destination="ImK-Rf-TsE" id="jtM-9v-euJ"/>
+                        <outlet property="GreenView" destination="i31-v5-XBJ" id="Kdo-pa-Uqj"/>
+                        <outlet property="RedView" destination="8bC-Xf-vdC" id="c6G-lB-77A"/>
+                        <outlet property="YellowView" destination="nLw-rG-Sbf" id="j00-kF-t1V"/>
+                        <outlet property="redView" destination="kMk-X2-eHU" id="6d7-8L-VVf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,6 +60,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
