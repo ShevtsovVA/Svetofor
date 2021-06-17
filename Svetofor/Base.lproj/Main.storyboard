@@ -13,53 +13,69 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Svetofor" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="OutBack">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kMk-X2-eHU">
-                                <rect key="frame" x="132" y="120" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nLw-rG-Sbf">
-                                <rect key="frame" x="132" y="294" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i31-v5-XBJ">
-                                <rect key="frame" x="132" y="465" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImK-Rf-TsE">
-                                <rect key="frame" x="167" y="710" width="80" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImK-Rf-TsE">
+                                <rect key="frame" x="116.5" y="769.5" width="181" height="72.5"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ImK-Rf-TsE" secondAttribute="height" multiplier="5:2" id="wOs-gl-jMV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="START"/>
                                 <connections>
                                     <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4YP-Ht-UCd"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qlo-Z6-nZG" userLabel="redView">
+                                <rect key="frame" x="132.5" y="64" width="149" height="149.5"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qlo-Z6-nZG" secondAttribute="height" multiplier="1:1" id="udD-oR-Kwn"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yE5-gE-y09" userLabel="yellowView">
+                                <rect key="frame" x="132.5" y="233.5" width="149" height="149"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZ7-QI-sZV" userLabel="greenView">
+                                <rect key="frame" x="132.5" y="402.5" width="149" height="149.5"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ImK-Rf-TsE" secondAttribute="bottom" constant="112" id="CZh-iQ-pG2"/>
-                            <constraint firstItem="ImK-Rf-TsE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="x0D-FQ-9Zt"/>
+                            <constraint firstItem="FZ7-QI-sZV" firstAttribute="width" secondItem="yE5-gE-y09" secondAttribute="width" id="BIe-tc-N7o"/>
+                            <constraint firstItem="ImK-Rf-TsE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="97:480" id="CRd-y1-vgF"/>
+                            <constraint firstItem="qlo-Z6-nZG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="E4C-U1-J80"/>
+                            <constraint firstItem="yE5-gE-y09" firstAttribute="top" secondItem="qlo-Z6-nZG" secondAttribute="bottom" constant="20" id="GLP-Fk-hXC"/>
+                            <constraint firstItem="ImK-Rf-TsE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Pi6-xQ-foZ"/>
+                            <constraint firstItem="yE5-gE-y09" firstAttribute="centerX" secondItem="qlo-Z6-nZG" secondAttribute="centerX" id="Plx-GV-lGw"/>
+                            <constraint firstItem="FZ7-QI-sZV" firstAttribute="centerX" secondItem="yE5-gE-y09" secondAttribute="centerX" id="Saf-ZU-LfM"/>
+                            <constraint firstItem="qlo-Z6-nZG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="f5f-LL-5zn"/>
+                            <constraint firstItem="qlo-Z6-nZG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:6" id="f9m-9i-ogZ"/>
+                            <constraint firstItem="yE5-gE-y09" firstAttribute="height" secondItem="qlo-Z6-nZG" secondAttribute="height" id="hAz-9I-it1"/>
+                            <constraint firstItem="yE5-gE-y09" firstAttribute="width" secondItem="qlo-Z6-nZG" secondAttribute="width" id="hCh-Xf-qpD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ImK-Rf-TsE" secondAttribute="bottom" constant="20" id="ohI-Gk-ey8"/>
+                            <constraint firstItem="FZ7-QI-sZV" firstAttribute="height" secondItem="yE5-gE-y09" secondAttribute="height" id="szZ-lY-EcR"/>
+                            <constraint firstItem="FZ7-QI-sZV" firstAttribute="top" secondItem="yE5-gE-y09" secondAttribute="bottom" constant="20" id="zP8-Ra-Tzq"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="Button" destination="ImK-Rf-TsE" id="jtM-9v-euJ"/>
-                        <outlet property="GreenView" destination="i31-v5-XBJ" id="Kdo-pa-Uqj"/>
                         <outlet property="RedView" destination="8bC-Xf-vdC" id="c6G-lB-77A"/>
-                        <outlet property="YellowView" destination="nLw-rG-Sbf" id="j00-kF-t1V"/>
-                        <outlet property="redView" destination="kMk-X2-eHU" id="6d7-8L-VVf"/>
+                        <outlet property="button" destination="ImK-Rf-TsE" id="3Yt-yY-kXa"/>
+                        <outlet property="greenView" destination="FZ7-QI-sZV" id="Uhr-l3-oas"/>
+                        <outlet property="redView" destination="qlo-Z6-nZG" id="rbw-9b-fck"/>
+                        <outlet property="yellowView" destination="yE5-gE-y09" id="8bO-BV-0tl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="94"/>
+            <point key="canvasLocation" x="457.5" y="90"/>
         </scene>
     </scenes>
     <resources>

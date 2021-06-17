@@ -22,10 +22,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        redView.layer.cornerRadius = 75
-        yellowView.layer.cornerRadius = 75
-        greenView.layer.cornerRadius = 75
+        redView.layer.cornerRadius = redView.frame.width / 2
+        yellowView.layer.cornerRadius = yellowView.frame.width / 2
+        greenView.layer.cornerRadius = greenView.frame.width / 2
         
+        print(redView.frame.width)
         button.layer.cornerRadius = 10
         
         redView.alpha = 0.3
